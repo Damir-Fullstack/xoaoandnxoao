@@ -21,9 +21,9 @@ function cnb(arg) {
 };
 function change(val) {
   if(cnb(val)) {
-    val = true;
+    return true;
   } else {
-    val = !val;
+    return !val;
   }
 };
 function clickA() {
@@ -45,7 +45,7 @@ function error() {
   }, 1000);
 };
 function doXoao() {
-  !(a^b)&&(a||b) ? !c : a&&c;
+  return !(a^b)&&(a||b) ? !c : a&&c;
 };
 function xoao() {
   if(cnb(a)||cnb(b)||cnb(c)){
@@ -56,7 +56,7 @@ function xoao() {
   }
 };
 function doNxoao() {
-  !(!(a^b)&&(a||b) ? !c : a&&c);
+  return !(!(a^b)&&(a||b) ? !c : a&&c);
 }
 function nxoao() {
   if(cnb(a)||cnb(b)||cnb(c)) {
