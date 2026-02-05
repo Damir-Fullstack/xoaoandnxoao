@@ -6,4 +6,8 @@ div{
   width: fit-content;
   min-width: 100px;
   display: block;
+  border-radius: 5px;
+}
+h1{
+  text-align: center;
 }
