@@ -38,15 +38,18 @@ function clickC() {
   c = change(c);
   dC.innerHTML = String(c);
 };
+function error() {
+  dResult.innerHTML = "Error, please wait 1s";
+  setTimeout(() => {
+    dResult.innerHTML = "No Result";
+  }, 1000);
+};
 function doXoao() {
   !(a^b)&&(a||b) ? !c : a&&c;
 };
 function xoao() {
   if(cnb(a)||cnb(b)||cnb(c)){
-    dResult.innerHTML = "Error, please wait 1s";
-    setTimeout(() => {
-      dResult.innerHTML = "No Result";
-    }, 1000);
+    error();
   } else {
     result = doXoao();
     dResult.innerHTML = String(result);
@@ -56,5 +59,10 @@ function doNxoao() {
   !(!(a^b)&&(a||b) ? !c : a&&c);
 }
 function nxoao() {
-  if(cnb(a)
-}
+  if(cnb(a)||cnb(b)||cnb(c)) {
+    error();
+  } else {
+    result = doNxoao();
+    dResult.innerHTML = String(result);
+  }
+};
