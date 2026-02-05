@@ -13,7 +13,7 @@ let b = "No Click";
 let c = "No Click";
 let result = "No Result";
 function cnb(arg) {
-  if((arg !== true)&&(arg !== false) {
+  if((arg !== true)&&(arg !== false)) {
     return true;
   } else {
     return false;
